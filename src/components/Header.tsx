@@ -47,7 +47,6 @@ const Header: React.FC = () => (
 export default Header;
 
 
-/* ─── STYLE OBJECTS ────────────────────────────────────────────────────── */
 
 const headerStyles: React.CSSProperties = {
     position: 'relative',
