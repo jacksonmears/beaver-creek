@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
     },
     navBarContainer: {
-        marginLeft: '1200px',
+        marginLeft: '700px',
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
