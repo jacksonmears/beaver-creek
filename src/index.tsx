@@ -1,5 +1,6 @@
-import NewHeader from "./components/NewHeader.tsx";
-import headerImage from './assets/images/testing.png';
+import Header from "./components/Header.tsx";
+import Footer from "./components/Footer.tsx";
+import headerImage from './assets/images/homepage-header-image.png';
 import {StyleSheet} from "@react-pdf/renderer";
 
 const TERTIARY_COLOR = "#50C878";
@@ -8,19 +9,20 @@ const P_FONTSIZE = 15;
 
 function Index() {
     return (
-        <div style={{ padding: '20px', position: 'relative' }}>
-            <NewHeader />
+        <div style={{position: 'relative'}}>
+            <Header />
             <div style={styles.titleContainer}>
                 <p style={styles.courseTitle}>Beaver Creek Golf Club</p>
                 <p style={styles.courseTitleDescription}>A timeless dance of turf, light, and sky</p>
             </div>
-            <div style={{ width: '100%', height: '2000px' }}>
+            <div style={{ width: '100%', height: '1300px'}}>
                 <img
                     src={headerImage}
                     alt={"scenic picture of golf course"}
                     style={styles.pictureStyle}
                 />
             </div>
+            <Footer />
         </div>
     );
 }

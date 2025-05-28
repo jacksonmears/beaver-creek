@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
-        padding: '5px',
+        padding: '10px',
         backgroundColor: SECONDARY_COLOR,
         alignItems: 'center',
         justifyContent: 'center',
@@ -57,7 +57,9 @@ const styles = StyleSheet.create({
         borderColor: PRIMARY_COLOR,
         borderStyle: "solid",
         borderRadius: '5px',
-        boxShadow: '0px 2px 4px 10px rgba(80, 200, 120, 0.2)',
+        boxShadow: 'inset 0 0 30px 15px rgba(80, 200, 120, 0.4)',
+        // boxShadow: '0px 2px 4px 10px rgba(80, 200, 120, 0.2)',
+
     },
     bookTimeButtonContainer: {
         borderRadius: '20px',
