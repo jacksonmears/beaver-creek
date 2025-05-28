@@ -1,7 +1,8 @@
 import NewHeader from "./components/NewHeader.tsx";
-import headerImage from './assets/images/homepage-header-image.png';
+import headerImage from './assets/images/testing.png';
 import {StyleSheet} from "@react-pdf/renderer";
 
+const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const P_FONTSIZE = 15;
 
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     courseTitleDescription: {
         fontFamily: "ICA Rubrik, sans-serif",
         fontSize: P_FONTSIZE * 1.5,
-        color: PRIMARY_COLOR,
+        color: TERTIARY_COLOR,
         fontWeight: "bold",
         margin: 0,
         marginTop: '10px'

@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Header.css';
 import { StyleSheet } from '@react-pdf/renderer'
 
+const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const SECONDARY_COLOR = "#000000";
 const P_FONTSIZE = 15;
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
     },
     navBarContainer: {
-        marginLeft: '700px',
+        marginLeft: '1200px',
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
         paddingRight: bookNowButtonPaddingSize,
         paddingTop: bookNowButtonPaddingSize / 2,
         paddingBottom: bookNowButtonPaddingSize / 2,
-        marginLeft: '10px',
+        marginLeft: '15px',
     },
     titleText: {
         fontFamily: "Cursive, sans-serif",
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
         fontSize: P_FONTSIZE * 1.3,
     },
     navBarText: {
-        color: PRIMARY_COLOR,
+        color: TERTIARY_COLOR,
         fontSize: P_FONTSIZE,
         fontFamily: "Garamond, sans-serif",
         fontWeight: "bold",
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
     navBarButtonContainer: {
         paddingTop: '10px',
         paddingBottom: '10px',
-        marginLeft: '10px',
+        marginLeft: '15px',
     },
 
 });
