@@ -1,0 +1,33 @@
+/* Header.css */
+.navItem {
+    transition: transform 0.1s ease;
+}
+
+.navItem:hover {
+    transform: scale(1.15) translateY(-10px);
+}
+
+.classButton {
+    background-color: #50C878; /* PRIMARY_COLOR */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.classButton:hover {
+    background-color: black; /* darker green for hover effect */
+    transform: scale(1.05);
+}
+
+.classButtonText {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 19.5px;
+    text-align: center;
+    margin: 0;
+}
+
+.classButton:hover {
+    color: #50C878;
+    transform: scale(1.05);
+}
