@@ -1,82 +1,58 @@
-import Header from "./components/Header.tsx";
-import Footer from "./components/Footer.tsx";
-import headerImage from './assets/images/homepage-header-image.png';
-import {StyleSheet} from "@react-pdf/renderer";
-import SubFooter from "./components/SubFooter.tsx";
-
+// src/pages/Index.tsx
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SubFooter from "./components/SubFooter";
+import headerImage from "./assets/images/homepage-header-image.png";
 
 const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const P_FONTSIZE = 15;
 
-
-
-
-
-
-
-
 function Index() {
-
-
-
     return (
-        <div style={{
-            position: 'relative',
-            backgroundColor: "black",
-            minHeight: '100vh',           // ← ensure it fills the viewport
-            zIndex: '-2',
+        <div style={styles.rootContainer}>
+            <div style={{width: '100%', height: '1300px', zIndex: -1, position: 'absolute'}}>
+                <img
+                    src={headerImage}
+                    alt={"scenic picture of golf course"}
+                    style={styles.pictureStyle}
+                />
+            </div>
 
-        }}>
-
-            <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                backgroundImage: `url(${headerImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                zIndex: -1,
-            }}/>
 
             <Header/>
+
             <div style={styles.titleContainer}>
                 <p style={styles.courseTitle}>Beaver Creek Golf Club</p>
-                <p style={styles.courseTitleDescription}>A timeless dance of turf, light, and sky</p>
+                <p style={styles.courseTitleDescription}>
+                    A timeless dance of turf, light, and sky
+                </p>
             </div>
 
-
-            <div style={{width: '100%', height: '1300px', backgroundColor: "black"}}>
-
-            </div>
-
+            <div style={styles.spacer}/>
 
             <Footer/>
-            <SubFooter />
-
-
+            <SubFooter/>
         </div>
     );
 }
 
 export default Index;
 
-const styles = StyleSheet.create({
-    pictureStyle: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        zIndex: -1,
+const styles: { [key: string]: React.CSSProperties } = {
+    rootContainer: {
+        position: "relative",
+        minHeight: "100vh",
+        overflow: "hidden",
     },
     titleContainer: {
-        marginTop: '40px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        height: '300px'
+        marginTop: "40px",
+        paddingLeft: "20px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        height: "800px", // adjust if you need more or less spacing
     },
     courseTitle: {
         fontFamily: "ICA Rubrik, sans-serif",
@@ -92,7 +68,11 @@ const styles = StyleSheet.create({
         color: TERTIARY_COLOR,
         fontWeight: "bold",
         margin: 0,
-        marginTop: '10px'
+        marginTop: "10px",
     },
-
-});
+    spacer: {
+        width: "100%",
+        height: "1300px",
+        backgroundColor: "black",
+    },
+};
