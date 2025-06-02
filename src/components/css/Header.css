@@ -1,6 +1,7 @@
 /* Header.css */
 .navItem {
     transition: transform 0.5s ease, letter-spacing 0.5s ease;
+
 }
 
 .navItem:hover {

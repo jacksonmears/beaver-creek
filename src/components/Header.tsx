@@ -1,8 +1,9 @@
 import React from 'react';
 import './css/Header.css';
-import { StyleSheet } from '@react-pdf/renderer'
+import {StyleSheet} from "@react-pdf/renderer";
 
-const TERTIARY_COLOR = "#50C878";
+
+// const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const SECONDARY_COLOR = "#000000";
 const P_FONTSIZE = 15;
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
+
     },
     navBarContainer: {
         marginLeft: '700px',
@@ -75,7 +77,7 @@ const styles = StyleSheet.create({
         fontSize: P_FONTSIZE * 1.3,
     },
     navBarText: {
-        color: TERTIARY_COLOR,
+        color: "white",
         fontSize: P_FONTSIZE,
         fontFamily: "Garamond, sans-serif",
         fontWeight: "bold",

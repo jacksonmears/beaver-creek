@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
     SubFooterContainer: {
         display: 'flex',
         flexDirection: 'row',
-        position: 'absolute',
-        bottom: 0,
-        right: 0,
+        // position: 'absolute',
+        // bottom: 0,
+        // right: 0,
         width: '100%',
         backgroundColor: "grey",
         height: '50px',
