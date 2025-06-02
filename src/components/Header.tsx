@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
-        marginTop: 50
+        // marginTop: 50
     },
     navBarContainer: {
         marginLeft: 700,
