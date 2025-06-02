@@ -5,14 +5,14 @@ import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
 
-const TERTIARY_COLOR = "#50C878";
+// const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const P_FONTSIZE = 15;
 
 function Index() {
     return (
         <div style={styles.rootContainer}>
-            <div style={{width: '100%', height: '1300px', zIndex: -1, position: 'absolute'}}>
+            <div style={{width: '100%', zIndex: -1, position: 'absolute'}}>
                 <img
                     src={headerImage}
                     alt={"scenic picture of golf course"}
@@ -30,7 +30,8 @@ function Index() {
                 </p>
             </div>
 
-            <div style={styles.spacer}/>
+
+
 
             <Footer/>
             <SubFooter/>
@@ -65,14 +66,11 @@ const styles: { [key: string]: React.CSSProperties } = {
     courseTitleDescription: {
         fontFamily: "ICA Rubrik, sans-serif",
         fontSize: P_FONTSIZE * 1.5,
-        color: TERTIARY_COLOR,
+        color: "black",
         fontWeight: "bold",
         margin: 0,
         marginTop: "10px",
     },
-    spacer: {
-        width: "100%",
-        height: "1300px",
-        backgroundColor: "black",
-    },
+
+
 };

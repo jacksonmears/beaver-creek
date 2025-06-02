@@ -44,21 +44,21 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
-
+        marginTop: 50
     },
     navBarContainer: {
-        marginLeft: '700px',
+        marginLeft: 700,
         display: 'flex',
         flexDirection: 'row',
         position: 'relative',
-        padding: '10px',
+        padding: 10,
         backgroundColor: SECONDARY_COLOR,
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: '0.1px',
+        borderWidth: 0.1,
         borderColor: PRIMARY_COLOR,
         borderStyle: "solid",
-        borderRadius: '5px',
+        borderRadius: 5,
         boxShadow: 'inset 0 0 30px 15px rgba(80, 200, 120, 0.4)',
         // boxShadow: '0px 2px 4px 10px rgba(80, 200, 120, 0.2)',
 

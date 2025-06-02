@@ -61,64 +61,67 @@ const windDirectionCalc = (dir: number) => {
 }
 
 const Header: React.FC = () => (
-    <div style={styles.FooterContainer}>
-        <div style={styles.boxContainers}>
-            <strong style={styles.boxText}>VISIT US</strong>
-            <p style={styles.boxText}>Beaver Creek Golf Club</p>
-            <p style={styles.boxText}>11200 NW Towner Dr</p>
-            <p style={styles.boxText}>Grimes, IA 50111</p>
+    <div style={{backgroundColor: "black"}}>
+        <div style={styles.FooterContainer}>
+            <div style={styles.boxContainers}>
+                <strong style={styles.boxText}>VISIT US</strong>
+                <p style={styles.boxText}>Beaver Creek Golf Club</p>
+                <p style={styles.boxText}>11200 NW Towner Dr</p>
+                <p style={styles.boxText}>Grimes, IA 50111</p>
 
-        </div>
-        <div style={styles.boxContainers}>
-            <p style={styles.boxText}>Beaver Creek Golf Club</p>
-        </div>
+            </div>
+            <div style={styles.boxContainers}>
+                <p style={styles.boxText}>Beaver Creek Golf Club</p>
+            </div>
 
-        <div style={styles.boxContainers}>
-            <div style={styles.weatherWeekContainer}>
-                {weatherData.daily.time.slice(1).map((date, i) => (
-                    <div key={i} style={styles.weatherDayContainer}>
-                        {i === 0 ?
-                            <strong style={styles.whiteColor}>Today</strong>
-                            :
-                            <strong style={styles.whiteColor}>{date.toDateString().slice(0, 3)}</strong>
-                        }
-
-                        <p style={styles.whiteColor}>{Math.floor(weatherData.daily.temperature2mMax[i])}°F</p>
-                        <p style={styles.whiteColor}>{Math.floor(weatherData.daily.temperature2mMin[i])}°F</p>
-
-
-                        {weatherData.daily.precipitationProbabilityMax[i] >= 35 ?
-
-                            <img src={rainCloud} alt={"raining"} style={styles.weatherImage}/>
-
-                            :
-                            Math.floor(weatherData.daily.cloudCoverMean[i]) >= 50 ?
-                                <img src={cloud} alt={"cloudy"} style={styles.weatherImage}/>
+            <div style={styles.boxContainers}>
+                <div style={styles.weatherWeekContainer}>
+                    {weatherData.daily.time.slice(1).map((date, i) => (
+                        <div key={i} style={styles.weatherDayContainer}>
+                            {i === 0 ?
+                                <strong style={styles.whiteColor}>Today</strong>
                                 :
-                                Math.floor(weatherData.daily.cloudCoverMean[i]) >= 35 ?
-                                    <img src={sunCloud} alt={"sun and cloud"} style={styles.weatherImage}/>
+                                <strong style={styles.whiteColor}>{date.toDateString().slice(0, 3)}</strong>
+                            }
+
+                            <p style={styles.whiteColor}>{Math.floor(weatherData.daily.temperature2mMax[i])}°F</p>
+                            <p style={styles.whiteColor}>{Math.floor(weatherData.daily.temperature2mMin[i])}°F</p>
+
+
+                            {weatherData.daily.precipitationProbabilityMax[i] >= 35 ?
+
+                                <img src={rainCloud} alt={"raining"} style={styles.weatherImage}/>
+
+                                :
+                                Math.floor(weatherData.daily.cloudCoverMean[i]) >= 50 ?
+                                    <img src={cloud} alt={"cloudy"} style={styles.weatherImage}/>
                                     :
-                                    <img src={sun} alt={"sunny"} style={styles.weatherImage}/>
-                        } <br/>
+                                    Math.floor(weatherData.daily.cloudCoverMean[i]) >= 35 ?
+                                        <img src={sunCloud} alt={"sun and cloud"} style={styles.weatherImage}/>
+                                        :
+                                        <img src={sun} alt={"sunny"} style={styles.weatherImage}/>
+                            } <br/>
 
-                        {Array.from({length: Math.floor(weatherData.daily.windSpeed10mMax[i] / 5)}).map((_, index) => (
-                            <img
-                                key={index}
-                                src={lowWind}
-                                alt={"low wind"}
-                                style={styles.windImage}
-                            />
-                        ))}  <br/>
+                            {Array.from({length: Math.floor(weatherData.daily.windSpeed10mMax[i] / 5)}).map((_, index) => (
+                                <img
+                                    key={index}
+                                    src={lowWind}
+                                    alt={"low wind"}
+                                    style={styles.windImage}
+                                />
+                            ))} <br/>
 
-                        <p style={styles.whiteColor}>Wind {Math.floor(weatherData.daily.windSpeed10mMax[i])} mph </p>
+                            <p style={styles.whiteColor}>Wind {Math.floor(weatherData.daily.windSpeed10mMax[i])} mph </p>
 
-                        <p style={styles.whiteColor}>Gusts {Math.floor(weatherData.daily.windGusts10mMax[i])} mph </p>
-                        <p style={styles.whiteColor}>{windDirectionCalc(weatherData.daily.windDirection10mDominant[i])}</p>
-                    </div>
-                ))}
+                            <p style={styles.whiteColor}>Gusts {Math.floor(weatherData.daily.windGusts10mMax[i])} mph </p>
+                            <p style={styles.whiteColor}>{windDirectionCalc(weatherData.daily.windDirection10mDominant[i])}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     </div>
+
 );
 
 export default Header;
@@ -128,11 +131,15 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         backgroundColor: "black",
-        height: '400px',
+        height: 400,
         justifyContent: 'center',
         alignItems: 'center',
         boxShadow: 'inset 0px 10px 30px 15px rgba(250, 250, 250, 0.4)',
-        borderTop: '1px solid white',
+        // borderTop: '1px solid white',
+        borderRadius: 20,
+        borderWidth: 1,
+        borderColor: 'white',
+        borderStyle: "solid",
 
     },
     boxContainers: {
