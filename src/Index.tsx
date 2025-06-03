@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
 import "./css/index.css";
+import {useNavigate} from "react-router-dom";
 
 const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
@@ -13,6 +14,10 @@ const WIDTH_INFO = 500;
 const HEIGHT_INFO = 300;
 
 function Index() {
+    const navigate = useNavigate();
+
+
+
     return (
         <div style={styles.rootContainer}>
 
@@ -28,7 +33,7 @@ function Index() {
 
 
 
-            <div style={styles.actionContainer}>
+            <div style={styles.actionContainer}  onClick={() => navigate("/rates")}>
                 <div className="actionBox" style={styles.ratesContainer}>
                     <div style={{padding: "40px"}}>
                         <p style={{color: "black", fontSize: 20}}>
