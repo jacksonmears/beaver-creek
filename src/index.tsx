@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
+import "./css/index.css";
 
-// const TERTIARY_COLOR = "#50C878";
+const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
 const P_FONTSIZE = 15;
 const WIDTH_INFO = 500;
@@ -28,20 +29,37 @@ function Index() {
 
 
             <div style={styles.actionContainer}>
-                <div style={styles.ratesContainer}>
-                        <p style={{color: "white"}}>
+                <div className="actionBox" style={styles.ratesContainer}>
+                    <div style={{padding: "40px"}}>
+                        <p style={{color: "black", fontSize: 20}}>
                             Enjoy a game of golf on a 27-hole bent grass
                             golf course at Beaver Creek Golf Club. Come
                             and try out your golf swing at our great golf
                             course today! Take a look at our
-                            daily rates below
+                            daily rates below.
                         </p>
-                    <button style={styles.actionButton}>
-                            <p style={{color: "white"}}>Button</p>
-                        </button>
+                    </div>
+
                 </div>
-                <div style={styles.passContainer}></div>
-                <div style={styles.outingContainer}></div>
+                <div className="actionBox" style={styles.passContainer}>
+                    <div style={{padding: "40px"}}>
+                        <p style={{color: "white", fontSize: 20}}>
+                            Take advantage of our weekday season pass. Unlimited golf Monday - Friday.
+                        </p>
+                    </div>
+                </div>
+                <div className="actionBox" style={styles.outingContainer}>
+                    <div style={{padding: "40px"}}>
+                        <p style={{color: "black", fontSize: 20}}>
+                            Enjoy a professionally organized outing at
+                            Beaver Creek Golf Club. With over 30 years
+                            of experience, we welcome groups of all sizes
+                            for unforgettable events. Let our team handle
+                            the details—contact us today to learn more about
+                            outing options!
+                        </p>
+                    </div>
+                </div>
             </div>
 
 
@@ -61,7 +79,7 @@ export default Index;
 const styles: { [key: string]: React.CSSProperties } = {
     rootContainer: {
         minHeight: "100vh",
-        backgroundColor: "black",
+        backgroundColor: "white",
     },
     headerContainer: {
         backgroundImage: `url(${headerImage})`,
@@ -70,7 +88,7 @@ const styles: { [key: string]: React.CSSProperties } = {
 
         padding: 50,
         borderRadius: 100,
-        boxShadow: '0px 0px 50px 10px rgba(250, 250, 250, 0.4)',
+        boxShadow: '0px 0px 50px 20px rgba(0, 0, 0, 0.4)',
 
     },
     titleContainer: {
@@ -107,36 +125,27 @@ const styles: { [key: string]: React.CSSProperties } = {
     ratesContainer: {
         width: WIDTH_INFO,
         height: HEIGHT_INFO,
-        backgroundColor: "black",
+        backgroundColor: TERTIARY_COLOR,
         borderRadius: 30,
-        borderColor: "white",
-        borderStyle: "solid",
-        borderWidth: 1,
-        boxShadow: 'inset 0px 0px 50px 30px rgba(250, 250, 250, 0.4)',
+        // boxShadow: '0px 0px 50px 30px rgba(0, 0, 0, 0.4)',
         alignItems: "center",
         justifyItems: "center",
     },
     passContainer: {
         width: WIDTH_INFO,
         height: HEIGHT_INFO,
-        backgroundColor: "black",
+        backgroundColor: PRIMARY_COLOR,
         borderRadius: 30,
-        borderColor: "white",
-        borderStyle: "solid",
-        borderWidth: 1,
-        boxShadow: 'inset 0px 0px 50px 30px rgba(250, 250, 250, 0.4)',
+        // boxShadow: '0px 0px 50px 30px rgba(0, 0, 0, 0.4)',
         marginLeft: 100,
         marginRight: 100,
     },
     outingContainer: {
         width: WIDTH_INFO,
         height: HEIGHT_INFO,
-        backgroundColor: "black",
+        backgroundColor: TERTIARY_COLOR,
         borderRadius: 30,
-        borderColor: "white",
-        borderStyle: "solid",
-        borderWidth: 1,
-        boxShadow: 'inset 0px 0px 50px 30px rgba(250, 250, 250, 0.4)',
+        // boxShadow: '0px 0px 50px 30px rgba(0, 0, 0, 0.4)',
     },
     TextContainer: {
         height: HEIGHT_INFO*0.65,
@@ -153,7 +162,4 @@ const styles: { [key: string]: React.CSSProperties } = {
         justifyContent: "center",
         alignItems: "center",
     },
-
-
-
 };
