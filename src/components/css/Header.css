@@ -37,7 +37,9 @@
     width: 30px;
     height: 30px;
     content: "";
-    background-color: #50C878;
+    background-color: white;
+    /*background-color: #50C878;*/
+
     top: -10px;
     left: -10px;
     transition: 1s ease;
@@ -50,7 +52,9 @@
     width: 30px;
     height: 30px;
     content: "";
-    border: 2px solid #50C878;
+    border: 2px solid white;
+    /*border: 2px solid #50C878;*/
+
     background-color: black;
     bottom: -10px;
     right: -10px;

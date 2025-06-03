@@ -4,7 +4,7 @@ import {StyleSheet} from "@react-pdf/renderer";
 
 
 // const TERTIARY_COLOR = "#50C878";
-const PRIMARY_COLOR = "#00674F";
+// const PRIMARY_COLOR = "#00674F";
 const SECONDARY_COLOR = "#000000";
 const P_FONTSIZE = 15;
 const bookNowButtonPaddingSize = 5;
@@ -55,11 +55,15 @@ const styles = StyleSheet.create({
         backgroundColor: SECONDARY_COLOR,
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 0.1,
-        borderColor: PRIMARY_COLOR,
-        borderStyle: "solid",
+        // borderColor: PRIMARY_COLOR,
+
+        // borderWidth: 0.05,
+        // borderColor: "white",
+        // borderStyle: "solid",
         borderRadius: 5,
-        boxShadow: 'inset 0 0 30px 15px rgba(80, 200, 120, 0.4)',
+        boxShadow: 'inset 0 0 30px 15px rgba(250, 250, 250, 0.4)',
+        // boxShadow: 'inset 0 0 30px 15px rgba(80, 200, 120, 0.4)',
+
         // boxShadow: '0px 2px 4px 10px rgba(80, 200, 120, 0.2)',
 
     },

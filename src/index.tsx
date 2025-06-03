@@ -84,16 +84,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     headerContainer: {
         backgroundImage: `url(${headerImage})`,
         backgroundPosition: "bottom center",
-
-
         padding: 50,
         borderRadius: 100,
         boxShadow: '0px 0px 50px 20px rgba(0, 0, 0, 0.4)',
 
     },
     titleContainer: {
-        marginTop: "40px",
-        paddingLeft: "20px",
+        marginTop: 40,
+        paddingLeft: 20,
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
@@ -104,7 +102,7 @@ const styles: { [key: string]: React.CSSProperties } = {
         fontWeight: "bold",
         fontSize: P_FONTSIZE * 6,
         color: "transparent",
-        WebkitTextStroke: `3px ${PRIMARY_COLOR}`,
+        WebkitTextStroke: `1px ${PRIMARY_COLOR}`,
         margin: 0,
     },
     courseTitleDescription: {

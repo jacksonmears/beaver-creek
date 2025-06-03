@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         // boxShadow: 'inset 0px 10px 30px 15px rgba(250, 250, 250, 0.4)',
-        boxShadow: 'inset 0px 0px 50px 30px rgba(250, 250, 250, 0.4)',
+        boxShadow: 'inset 0px 0px 50px 25px rgba(250, 250, 250, 0.4)',
         // borderTop: '1px solid white',
         // borderRadius: 20,
         // borderWidth: 1,
