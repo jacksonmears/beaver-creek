@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
 import "./css/index.css";
+import RatesImage from "./assets/images/RatesBackground.png";
 // import actionBoxBackground from "./assets/images/testing.png";
 // import {useNavigate} from "react-router-dom";
 
@@ -145,9 +146,9 @@ const styles: { [key: string]: React.CSSProperties } = {
         // boxShadow: '0px 0px 50px 30px rgba(0, 0, 0, 0.4)',
         alignItems: "center",
         justifyItems: "center",
-        // backgroundImage: `url(${actionBoxBackground})`,
-        // backgroundSize: "cover",
-        // backgroundPosition: 'center',
+        backgroundImage: `linear-gradient(rgba(80, 200, 120, 0.8), rgba(80, 200, 120, 0.8)), url(${RatesImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: 'center',
     },
     passContainer: {
         width: WIDTH_INFO,
