@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
 import "./css/index.css";
+// import actionBoxBackground from "./assets/images/testing.png";
 // import {useNavigate} from "react-router-dom";
 
 const TERTIARY_COLOR = "#50C878";
@@ -144,6 +145,9 @@ const styles: { [key: string]: React.CSSProperties } = {
         // boxShadow: '0px 0px 50px 30px rgba(0, 0, 0, 0.4)',
         alignItems: "center",
         justifyItems: "center",
+        // backgroundImage: `url(${actionBoxBackground})`,
+        // backgroundSize: "cover",
+        // backgroundPosition: 'center',
     },
     passContainer: {
         width: WIDTH_INFO,
