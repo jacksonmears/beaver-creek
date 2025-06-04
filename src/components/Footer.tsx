@@ -45,7 +45,7 @@ interface WeatherData {
 
 
 
-const Header = () => {
+function Footer() {
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
 
     const windDirectionCalc = (dir: number) => {
@@ -106,7 +106,13 @@ const Header = () => {
                 </div>
 
                 <div style={styles.boxContainers}>
-                    <img src={logo} alt="logo" style={styles.logo}/>
+                    <img src={logo} alt="logo"
+                         style={{
+                             height: 300,
+                             width: 300,
+                             objectFit: 'contain',
+                             marginTop: '10px',
+                    }}/>
                 </div>
 
                 <div style={styles.boxContainers}>
@@ -179,9 +185,9 @@ const Header = () => {
             </div>
         </div>
     );
-};
+}
 
-export default Header;
+export default Footer;
 
 const styles = StyleSheet.create({
     FooterContainer: {
@@ -236,10 +242,4 @@ const styles = StyleSheet.create({
         padding: "0px",
         fontSize: "12px",
     },
-    logo: {
-        height: 300,
-        width: 300,
-        objectFit: 'contain',
-        marginTop: '10px',
-    }
 })

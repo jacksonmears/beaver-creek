@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import SubFooter from "./components/SubFooter";
 import headerImage from "./assets/images/homepage-header-image.png";
 import "./css/index.css";
-import {useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 
 const TERTIARY_COLOR = "#50C878";
 const PRIMARY_COLOR = "#00674F";
@@ -14,7 +14,7 @@ const WIDTH_INFO = 500;
 const HEIGHT_INFO = 300;
 
 function Index() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
 
 
