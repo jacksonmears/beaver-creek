@@ -22,10 +22,8 @@ const Header: React.FC = () => (
             </div>
             <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>Golf
                 Instruction</p></div>
-            <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>Event
-                Creation</p></div>
-            <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>League
-                Information</p></div>
+            <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>Create Event</p></div>
+            <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>League Info</p></div>
             <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>Club House</p>
             </div>
             <div className="navItem" style={styles.navBarButtonContainer}><p style={styles.navBarText}>Contact Us</p>

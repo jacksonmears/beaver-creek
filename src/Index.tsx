@@ -33,9 +33,9 @@ function Index() {
 
 
 
-            <div style={styles.actionContainer}  onClick={() => navigate("/rates")}>
+            <div style={styles.actionContainer} >
                 <div className="actionBox" style={styles.ratesContainer}>
-                    <div style={{padding: "40px"}}>
+                    <div style={styles.actionBoxTextContainer}>
                         <p style={{color: "black", fontSize: 20}}>
                             Enjoy a game of golf on a 27-hole bent grass
                             golf course at Beaver Creek Golf Club. Come
@@ -44,17 +44,24 @@ function Index() {
                             daily rates below.
                         </p>
                     </div>
+                    <div className="actionButtonOutside" style={styles.actionButtonContainerOutside}>
+                        <p style={{color: "black"}}>Rates!</p>
+                    </div>
 
                 </div>
                 <div className="actionBox" style={styles.passContainer}>
-                    <div style={{padding: "40px"}}>
+                    <div style={styles.actionBoxTextContainer}>
                         <p style={{color: "white", fontSize: 20}}>
                             Take advantage of our weekday season pass. Unlimited golf Monday - Friday.
                         </p>
                     </div>
+                    <div  className="actionBoxButton" style={styles.actionButtonContainer}>
+                        <p style={{color: "white"}}>Passes!</p>
+
+                    </div>
                 </div>
                 <div className="actionBox" style={styles.outingContainer}>
-                    <div style={{padding: "40px"}}>
+                    <div style={styles.actionBoxTextContainer}>
                         <p style={{color: "black", fontSize: 20}}>
                             Enjoy a professionally organized outing at
                             Beaver Creek Golf Club. With over 30 years
@@ -63,6 +70,10 @@ function Index() {
                             the details—contact us today to learn more about
                             outing options!
                         </p>
+                    </div>
+                    <div  className="actionButtonOutside" style={styles.actionButtonContainerOutside}>
+                        <p style={{color: "black"}}>Outings!</p>
+
                     </div>
                 </div>
             </div>
@@ -158,11 +169,38 @@ const styles: { [key: string]: React.CSSProperties } = {
     buttonContainer: {
         height: HEIGHT_INFO*0.35,
     },
-    actionButton: {
+    actionButtonContainer: {
         padding: 10,
-        height: 100,
-        width: 100,
-        justifyContent: "center",
-        alignItems: "center",
+        // backgroundColor: "palegoldenrod",
+        // backgroundColor: "rgb(150,150,150)",
+        width: 150,
+        // height: 40,
+        justifySelf: "center",
+        justifyItems: "center",
+        borderRadius: 30,
+        borderWidth: 3,
+        borderColor: "white",
+        borderStyle: "solid",
+        cursor: "pointer",
+
     },
+    actionButtonContainerOutside: {
+        padding: 10,
+        // backgroundColor: "palegoldenrod",
+        // backgroundColor: "rgb(150,150,150)",
+        width: 150,
+        // height: 40,
+        justifySelf: "center",
+        justifyItems: "center",
+        borderRadius: 30,
+        borderWidth: 3,
+        borderColor: "black",
+        borderStyle: "solid",
+        cursor: "pointer",
+    },
+    actionBoxTextContainer: {
+        padding: 40,
+        height: 125,
+
+    }
 };

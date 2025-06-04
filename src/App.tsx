@@ -6,7 +6,7 @@ import AppRoutes from "./Routes.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <BrowserRouter basename={"/beaver-creek/"}>
+      <BrowserRouter>
           <AppRoutes />
       </BrowserRouter>
   </StrictMode>,

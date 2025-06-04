@@ -7,6 +7,7 @@ import sun from "../assets/images/icons8-sunny-48.png";
 import lowWind from "../assets/images/icons8-wind-50.png";
 import { fetchWeatherApi } from "openmeteo";
 import {StyleSheet} from "@react-pdf/renderer";
+import logo from "../assets/images/logo-transparent.png";
 
 const params = {
     latitude: 41.6448512,
@@ -105,7 +106,7 @@ const Header = () => {
                 </div>
 
                 <div style={styles.boxContainers}>
-                    <p style={styles.boxText}>Beaver Creek Golf Club</p>
+                    <img src={logo} alt="logo" style={styles.logo}/>
                 </div>
 
                 <div style={styles.boxContainers}>
@@ -201,9 +202,13 @@ const styles = StyleSheet.create({
     boxContainers: {
         height: '50%',
         width: "25%",
-        justifyItems: 'center',
-        alignContent: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
     },
+
     boxText: {
         color: 'white',
     },
@@ -231,4 +236,10 @@ const styles = StyleSheet.create({
         padding: "0px",
         fontSize: "12px",
     },
+    logo: {
+        height: 300,
+        width: 300,
+        objectFit: 'contain',
+        marginTop: '10px',
+    }
 })
